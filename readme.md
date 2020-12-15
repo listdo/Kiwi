@@ -2,7 +2,7 @@
 
 ## Description
 
-Kiwi is a lightweightes time tracker. That enables the user to track time spent for predefined tasks in the browser. It either counts up until the user pauses the timer or counts down and notifies the user when the timer ran out.
+Kiwi is a lightweight time tracker, that enables the user to track time spent for predefined tasks in the browser. It either counts up until the user pauses the timer or counts down and notifies the user when the timer ran out.
 
 ## Requirements
 

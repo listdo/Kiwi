@@ -9,12 +9,21 @@
         <meta name="author" content="Dominik List">
 
         <link rel="stylesheet" href="css/default.css">
-        <script src="js/scripts.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="js/script.js"></script>
     </head>
 
     <body>
         <div class="timer-container">
-            Text!
+            <input id="timer" type="text" class="timer"/>
+            <button id="start_btn" onclick="handle_button_input()">
+                Start / Pause
+            </button>
+            <button id="reset_btn" onclick="handle_reset_input()">
+                Reset
+            </button>
         </div>
     </body>
 </html>
