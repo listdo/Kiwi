@@ -4,7 +4,6 @@ let timer = 0;
 function handle_button_input()
 {
     timerState = !timerState;
-    console.log(timerState);
 }
 
 function handle_reset_input()
