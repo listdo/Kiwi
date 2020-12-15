@@ -1,4 +1,4 @@
-# Kiwi Timetracker
+# 🥝 Kiwi Time Tracking
 
 ## Description
 
