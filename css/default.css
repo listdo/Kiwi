@@ -1,6 +1,24 @@
 .timer-container
 {
+    display: grid;
+    margin-left: -10em;
     position: fixed;
     top: 50%;
     left: 50%;
+    grid-template-columns: 36.5%;
+}
+
+.timer
+{
+    font-size: 5em;
+    text-align: center;
+    color: lightslategray;
+    border: 0px none;
+    width: 100%;
+}
+
+.btn
+{
+    width: 47.5%;
+    margin: auto;
 }

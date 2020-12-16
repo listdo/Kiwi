@@ -1,0 +1,22 @@
+{
+  "name": "kiwi",
+  "version": "1.0.0",
+  "description": "Kiwi is a lightweight time tracker, that enables the user to track time spent for predefined tasks in the browser. It either counts up until the user pauses the timer or counts down and notifies the user when the timer ran out.",
+  "main": "/js/script.js",
+  "scripts": {
+    "start": "serve . -l 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/listdo/Kiwi.git"
+  },
+  "author": "Dominik List",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/listdo/Kiwi/issues"
+  },
+  "homepage": "https://github.com/listdo/Kiwi#readme",
+  "dependencies": {
+    "serve": "^11.3.2"
+  }
+}
