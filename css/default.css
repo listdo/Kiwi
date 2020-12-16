@@ -1,3 +1,8 @@
+#html
+{
+    margin: 0px;
+}
+
 .timer-container
 {
     display: grid;
@@ -11,6 +16,14 @@
 .btn-container
 {
     display: flex; 
+}
+
+.github-header
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 8px;
 }
 
 .timer
