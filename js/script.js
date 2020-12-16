@@ -44,3 +44,13 @@ jQuery(document).ready(function() {
     updateTime();
     setInterval(updateTime, 1000);
 });
+
+document.onkeypress = function (event) {
+    event = event || window.event;
+
+    if(event.keyCode === 43)
+        timer += 60;      
+
+    if(event.keyCode === 45)
+        timer = (timer >= 60) ? timer - 60 : 0;
+};
