@@ -8,6 +8,11 @@
     grid-template-columns: 36.5%;
 }
 
+.btn-container
+{
+    display: flex; 
+}
+
 .timer
 {
     font-size: 5em;
@@ -19,6 +24,6 @@
 
 .btn
 {
-    width: 47.5%;
-    margin: auto;
+    width: 50%;
+    margin: 1px;
 }
