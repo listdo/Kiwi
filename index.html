@@ -2,37 +2,39 @@
 <html lang="en">
     <head>
         <title>Kiwi Tracker</title>
+        <meta charset="UTF-8">    
+        <meta name="viewport">
+        <meta name="theme-color">
+
         <meta name="description" content="Kiwi a smoll time tracker.">
-        <meta name="author" content="Dominik List">
-        <meta charset="utf-8">
+        <meta name="author" content="Dominik List">  
 
         <link rel="stylesheet" href="css/default.css">
+        <link rel="manifest" href="/manifest.json">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/script.js"></script>
+        <script src="js/app.js"></script>
     </head>
 
     <body>
         <header id="header">
             <p id="github_link" class="github-header">
                 <a href="https://github.com/listdo/Kiwi"/>
-                <img src="resources/images/githublogos/GitHub-Mark-32px.png"/>
+                <img src="resources/images/githublogos/GitHub-Mark-32px.png" width="32px" height="32px" alt="Github Link for repository"/>
             </a>
         </header>
-
-        </div>
-        <div class="timer-container">
-            <div>
+        <main>
+            <div class="timer-container">
                 <input id="timer" type="text" class="timer" readonly/>
+                <div class="btn-container">
+                    <button id="start_btn" class="btn" onclick="handle_button_input()">
+                        Start / Pause
+                    </button>
+                    <button id="reset_btn" class="btn" onclick="handle_reset_input()">
+                        Reset
+                    </button>
+                </div>
             </div>
-            <div class="btn-container">
-                <button id="start_btn" class="btn" onclick="handle_button_input()">
-                    Start / Pause
-                </button>
-                <button id="reset_btn" class="btn" onclick="handle_reset_input()">
-                    Reset
-                </button>
-            </div>
-        </div>
+        </main>
     </body>
 </html>
