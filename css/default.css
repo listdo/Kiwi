@@ -11,6 +11,8 @@
     top: 50%;
     left: 50%;
     grid-template-columns: 36.5%;
+    width: 100%;
+    text-align:center;
 }
 
 .btn-container
@@ -32,7 +34,6 @@
     text-align: center;
     color: lightslategray;
     border: 0px none;
-    width: 100%;
 }
 
 .btn
