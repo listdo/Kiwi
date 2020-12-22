@@ -1,5 +1,6 @@
 let timerState = false;
-let timer = 0;
+let timer = Number(0);
+let counter = Number(1);
 
 function handle_button_input()
 {
@@ -13,6 +14,11 @@ function handle_reset_input()
 
     window.localStorage.setItem('currentTimer', timer);
     setDefault();
+}
+
+function handle_count_mode(checkbox)
+{
+    counter *= -1;
 }
 
 function setDefault()
@@ -33,11 +39,12 @@ jQuery(document).ready(function() {
     var timerField = jQuery('#timer');
     
     function updateTime() {
-        if(timerState)
+        if(timerState && Number(timer) + Number(counter) >= 0)
         {
-            timer++;       
+            timer = Number(timer) + Number(counter);
+
             timerField.val(new Date(timer * 1000).toISOString().substr(11, 8).toString());        
-            window.localStorage.setItem('currentTimer', timer);      
+            window.localStorage.setItem('currentTimer', timer);            
         }
     }
 
