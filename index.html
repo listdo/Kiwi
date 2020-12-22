@@ -2,38 +2,39 @@
 <html lang="en">
     <head>
         <title>Kiwi Tracker</title>
+        <meta charset="UTF-8">    
+        <meta name="viewport">
+        <meta name="theme-color">
+
         <meta name="description" content="Kiwi a smoll time tracker.">
-        <meta name="author" content="Dominik List">
-        <meta charset="utf-8">
+        <meta name="author" content="Dominik List">  
 
         <link rel="stylesheet" href="css/default.css">
+        <link rel="manifest" href="/manifest.json">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/script.js"></script>
+        <script src="js/app.js"></script>
     </head>
 
     <body>
         <header id="header">
             <p id="github_link" class="github-header">
                 <a href="https://github.com/listdo/Kiwi"/>
-                <img src="resources/images/githublogos/GitHub-Mark-32px.png"/>
+                <img src="resources/images/githublogos/GitHub-Mark-32px.png" width="32px" height="32px" alt="Github Link for repository"/>
             </a>
         </header>
-
-        </div>
-        <div class="timer-container">
-            <div>
+        <main>
+            <div class="timer-container">
                 <input id="timer" type="text" class="timer" readonly/>
-            </div>
-            <div class="btn-container">
-                <input id="start_btn" type="button" class="btn" value="Start / Pause" onclick="handle_button_input()"/>
-                <input id="reset_btn" type="button" class="btn" value="Reset" onclick="handle_reset_input()"/>
-                <!--input id="countdown_btn" type="button" class="btn" value="Countdown" onclick="handle_count_mode()"/-->
-
-                <label class="switch">
-                    <input type="checkbox" onclick='handle_count_mode(this);' checked>
-                    <span class="slider round"></span>
-                </label>
+                <div class="btn-container">
+                    <input id="start_btn" type="button" class="btn" value="Start / Pause" onclick="handle_button_input()"/>
+                    <input id="reset_btn" type="button" class="btn" value="Reset" onclick="handle_reset_input()"/>
+    
+                    <label class="switch">
+                        <input type="checkbox" onclick='handle_count_mode(this);' checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
             </div>
         </div>
     </body>
