@@ -1,5 +1,6 @@
 let timerState = false;
-let timer = 0;
+let timer = Number(0);
+let counter = Number(1);
 
 if('serviceWorker' in navigator){
     navigator.serviceWorker.register('sw.js')
@@ -21,6 +22,11 @@ function handle_reset_input()
     setDefault();
 }
 
+function handle_count_mode(checkbox)
+{
+    counter *= -1;
+}
+
 function setDefault()
 {
     var timerField = jQuery('#timer');
@@ -39,11 +45,12 @@ jQuery(document).ready(function() {
     var timerField = jQuery('#timer');
     
     function updateTime() {
-        if(timerState)
+        if(timerState && Number(timer) + Number(counter) >= 0)
         {
-            timer++;       
+            timer = Number(timer) + Number(counter);
+
             timerField.val(new Date(timer * 1000).toISOString().substr(11, 8).toString());        
-            window.localStorage.setItem('currentTimer', timer);      
+            window.localStorage.setItem('currentTimer', timer);            
         }
     }
 

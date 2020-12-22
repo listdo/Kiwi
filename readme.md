@@ -8,7 +8,7 @@ Kiwi is a lightweight time tracker, that enables the user to track time spent fo
 
 - [x] Dynamic timer in the center of the application
 - [ ] Create projects / tasks and set timer for specific projects
-- [ ] Reverse timer - this timer counts down aka. Countdown
+- [x] Reverse timer - this timer counts down
 - [ ] Pomodoro Modus
 
 ## Online Version

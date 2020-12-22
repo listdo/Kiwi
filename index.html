@@ -27,14 +27,15 @@
             <div class="timer-container">
                 <input id="timer" type="text" class="timer" readonly/>
                 <div class="btn-container">
-                    <button id="start_btn" class="btn" onclick="handle_button_input()">
-                        Start / Pause
-                    </button>
-                    <button id="reset_btn" class="btn" onclick="handle_reset_input()">
-                        Reset
-                    </button>
+                    <input id="start_btn" type="button" class="btn" value="Start / Pause" onclick="handle_button_input()"/>
+                    <input id="reset_btn" type="button" class="btn" value="Reset" onclick="handle_reset_input()"/>
+    
+                    <label class="switch">
+                        <input type="checkbox" onclick='handle_count_mode(this);' checked>
+                        <span class="slider round"></span>
+                    </label>
                 </div>
             </div>
-        </main>
+        </div>
     </body>
 </html>
