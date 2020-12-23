@@ -11,6 +11,15 @@ if('serviceWorker' in navigator){
 function handle_button_input()
 {
     timerState = !timerState;
+
+    let btnContent = "";
+
+    if(timerState)
+        btnContent = "Pause ❚❚";    
+    else
+        btnContent="Play ►";
+
+    jQuery('#start_btn').prop('value', btnContent);   
 }
 
 function handle_reset_input()
