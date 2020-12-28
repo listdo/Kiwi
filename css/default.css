@@ -27,6 +27,13 @@
     margin: 8px;
 }
 
+
+.tasks-section
+{
+    margin: auto;
+    width: 100%;
+}
+
 .timer
 {
     font-size: 5em;
