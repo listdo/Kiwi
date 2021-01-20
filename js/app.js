@@ -1,7 +1,6 @@
 let timerState = false;
 let timer = Number(0);
 let counter = Number(1);
-let tasks = new Object();
 
 if('serviceWorker' in navigator){
     navigator.serviceWorker.register('sw.js')
@@ -35,25 +34,6 @@ function handle_reset_input()
 function handle_count_mode(checkbox)
 {
     counter *= -1;
-}
-
-function handle_add_time_task_input(task_name)
-{
-    tasks[task_name] += Number(timer);
-
-    let field_name = "#" + task_name + "_time";
-    jQuery(field_name).html(new Date(tasks[task_name] * 1000).toISOString().substr(11, 8).toString());
-}
-
-function handle_add_task_input()
-{
-    let task_name = jQuery('#task_text').val();
-
-    if(task_name && tasks[task_name] == undefined)
-    {
-        tasks[task_name] = Number(0)
-        jQuery('#tasks-table tr:last').after('<tr><td id="' + task_name + "_name" + '">' + task_name + '</td><td id="' + task_name+"_time" + '">' + tasks[task_name] + '</td><td>' + '<input type="button" value="+" onclick="handle_add_time_task_input(\''+task_name+'\')"/>' + '</td></tr>');               
-    }
 }
 
 function setDefault()
